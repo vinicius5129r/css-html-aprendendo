@@ -1,0 +1,50 @@
+/* Nota: 
+em HTML é id = em CSS é #
+em HTML é class = em CSS é .
+*/
+
+/* @charset é uma regra CSS que define a codificação de caracteres usada no arquivo CSS. Neste caso, "UTF-8" é uma codificação de caracteres amplamente utilizada que suporta uma ampla gama de caracteres, incluindo caracteres acentuados e símbolos especiais. */
+@charset "UTF-8";
+
+/* O seletor universal (*) é usado para selecionar todos os elementos em um documento HTML. Neste caso, ele é usado para aplicar as seguintes regras de estilo a todos os elementos: */
+* {
+  margin: 0; /* Define a margem de todos os elementos como 0, removendo qualquer espaço em branco ao redor dos elementos. */
+  padding: 0; /* Define o preenchimento de todos os elementos como 0, removendo qualquer espaço interno dentro dos elementos. */
+  box-sizing: border-box; /* Define que a largura e altura dos elementos incluem a margem e o preenchimento. */
+}
+
+/* O seletor body é usado para selecionar o elemento <body> em um documento HTML. Neste caso, ele é usado para aplicar as seguintes regras de estilo ao corpo da página: */
+body {
+  background-color: #d6fde9; /* Define a cor de fundo do corpo da página como um tom de verde claro usando um valor hexadecimal. */
+  font-family:
+    Arial, Helvetica, sans-serif; /* Define a família de fontes para o texto no corpo da página. Arial é a fonte principal, Helvetica é a fonte de fallback e sans-serif é a categoria de fontes sem serifa. */
+}
+
+h1 {
+  color: #1e402f; /* Define a cor do texto dos elementos <h1> como um tom de verde escuro usando um valor hexadecimal. */
+}
+h1#principal {
+  text-align: center; /* Alinha o texto do elemento <h1> com o id "principal" ao centro. */
+  background-color: #3c805e; /* Define a cor de fundo do elemento <h1> com o id "principal" como um tom de verde médio usando um valor hexadecimal. */
+  color: white; /* Define a cor do texto do elemento <h1> com o id "principal" como branco. */
+}
+h2 {
+  color: #3c805e; /* Define a cor do texto dos elementos <h2> como um tom de verde médio usando um valor hexadecimal. */
+}
+
+.basico {
+  color: #3c805e; /* Define a cor do texto dos elementos com a classe "basico" como um tom de verde médio usando um valor hexadecimal. */
+  font-weight: bolder; /* Define o peso da fonte dos elementos com a classe "basico" como mais negrito. */
+}
+
+.intermediario {
+  color: #80793c; /* Define a cor do texto dos elementos com a classe "intermediario" como um tom de verde-oliva usando um valor hexadecimal. */
+}
+
+.avancado {
+  color: #803c3c; /* Define a cor do texto dos elementos com a classe "avancado" como um tom de vermelho-escuro usando um valor hexadecimal. */
+}
+
+.destaque {
+  background-color: #c5c56070; /* Define a cor de fundo dos elementos com a classe "destaque" como um tom de amarelo claro usando um valor hexadecimal com transparência. */
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        color: darkblue;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      /* link: cor para links normais */
+      a {
+        color: darkred;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      /* visited: cor para links já visitados */
+      a:visited {
+        color: purple;
+      }
+
+      /* hover: cor para links quando o mouse passa por cima */
+      a:hover {
+        color: orange;
+        text-decoration: underline;
+      }
+
+      /* active: cor para links no momento do clique */
+      a:active {
+        color: green;
+      }
+
+      /* Adicionando um indicador para links externos usando a pseudo-classe ::after */
+      a::after {
+        content: " [link]";
+        font-size: 12px;
+        color: gray;
+      }
+
+      pre {
+        background-color: #f4f4f4;
+        padding: 10px;
+        border: 1px solid #ccc;
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pessoanalizando links</h1>
+    <p>Veja o exemplo abaixo de um link personalizado:</p>
+    <ul>
+      <li>
+        <a href="https://github.com" target="_blank">Github</a>
+      </li>
+      <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+      <li><a href="https://google.com" target="_blank">Google</a></li>
+    </ul>
+    <pre>
+        Seletores Pesonalizados
+        #  = id - Ex: #meuId
+        .  = class - Ex: .minhaClasse
+        :  = pseudo-classe - Ex: a:hover
+        :: = pseudo-elemento - Ex: a::after
+        >  = filho direto - Ex: div > p
+        +  = irmão adjacente - Ex: h1 + p
+    </pre>
+  </body>
+</html>

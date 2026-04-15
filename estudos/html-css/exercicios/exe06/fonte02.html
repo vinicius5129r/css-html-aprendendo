@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fontes Externas</title>
+    <style>
+      @font-face {
+        font-family: "MinhaFonteEtnocentric";
+        src: url("fontes/Ethnocentric-Regular.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "MinhaFonteAppleGaramond-Light";
+        src: url("fontes/AppleGaramond-Light.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      /* Tipo de format()
+            - opentype: para fontes OpenType (.otf)
+            - truetype: para fontes TrueType (.ttf)
+            - woff: para fontes Web Open Font Format (.woff)
+            - woff2: para fontes Web Open Font Format 2.0 (.woff2)
+            - svg: para fontes SVG (.svg)
+            - eot: para fontes Embedded OpenType (.eot)
+            - embedded-opentype: para fontes Embedded OpenType (.eot) com suporte a navegadores antigos
+            - truetype-aat: para fontes TrueType com suporte a Apple Advanced Typography (AAT)
+            */
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        font-family: "MinhaFonteEtnocentric", Times, serif;
+        font-size: 3em;
+      }
+      p {
+        font-family: "MinhaFonteAppleGaramond-Light", serif;
+        font-size: 1.2em;
+      }
+      pre {
+        background-color: #f4f4f4;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fontes Externas</h1>
+    <p>Este é um exemplo de como usar fontes externas em um documento HTML.</p>
+    <p>
+      Para usar uma fonte externa, você pode incluir um link para a fonte no
+      cabeçalho do seu documento HTML. Por exemplo:
+    </p>
+    <pre>
+&lt;head&gt;
+  &lt;link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"&gt;
+&lt;/head&gt;</pre
+    >
+    <p>
+      Depois de incluir o link para a fonte, você pode usar a fonte em seu CSS.
+      Por exemplo:
+    </p>
+    <pre>
+body {
+  font-family: 'Roboto', sans-serif;
+}</pre
+    >
+    <p>
+      Substitua 'Roboto' pelo nome da fonte que você escolheu no Google Fonts.
+    </p>
+  </body>
+</html>
